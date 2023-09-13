@@ -1,0 +1,102 @@
+<html>
+<title>Form Lengkap</title>
+<head> 
+ <link rel="stylesheet" href="layout1.css">
+ 
+ </head>
+  <header>
+        <h5></h5>
+    </header>
+<nav>
+             <ul>
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="profil.html">Profil</a></li>
+             <li>
+                 <a href="#">Produk</a>
+             <ul>
+                 <li><a href="Iguana.html">Iguana</a></li>
+                 <li><a href="Kura Kura.html">Kura-Kura</a></li>
+	         <li><a href="Bunglon.html">Bunglon</a></li>
+	         <li><a href="Ular.html">Ular</a></li>
+            </ul>
+           </li>
+              <li><a href="mitra.html">Mitra</a></li>
+	      <li><a href="kredit.html">Kredit Produk</a></li>
+              <li><a href="kontak.html">Kontak Kami</a></li>
+			    <li><a href="formlanjut.html">  Pemesanan</a></li>
+             </li>
+        </nav>
+<body>
+<form method="get">
+<h2 align=center>FORM PEMESANAN</h2><hr>
+<p>
+<label>Name
+<input type="text" name="customer_name" required>
+</label> 
+</p>
+
+<p>
+<label>Phone 
+<input type="tel" name="phone_number">
+</label>
+</p>
+
+<p>
+<label>Email 
+<input type="email" name="email_address">
+</label>
+</p>
+
+<fieldset>
+<legend>Size Reptile Yang Ingin Dipesan?</legend>
+<p><label> <input type="radio" name="taxi" required value="car"> Baby</label></p>
+<p><label> <input type="radio" name="taxi" required value="van"> Juvenile</label></p>
+<p><label> <input type="radio" name="taxi" required value="tuktuk"> Adult</label></p>
+</fieldset>
+
+<fieldset>
+<legend>Paket Pengiriman</legend>
+<p><label> <input type="checkbox" name="extras" value="baby"> Reptile + Reptile BAG </label></p>
+<p><label> <input type="checkbox" name="extras" value="wheelchair">Reptile + Reptile BAG + Mini Cage</label></p>
+<p><label> <input type="checkbox" name="extras" value="tip"> Reptile + Reptile BAG + Medium Cage</label></p>
+<p><label> <input type="checkbox" name="extras" value="tip"> Reptile + Reptile BAG + Large Cage </label></p>
+</fieldset>
+
+<p>
+<label>Pickup Date/Time
+<input type="datetime-local" name="pickup_time" required>
+</label>
+</p>
+	
+<p>
+<label>Tempat Pengambilan Barang
+<select id="tempat_pengambilan" name="tempat_pengambilan">
+<option value="" selected="selected">Pilih Satu</option>
+<option value="Rumah" >Rumah</option>
+<option value="Kantor" >Kantor</option>
+<option value="Toko Penjual" >Toko Penjual</option>
+</select>
+</label> 
+</p>
+
+<p>
+<label>Tempat Dropoff
+<input type="text" name="tampat_dropoff" required list="Tujuan">
+</label>
+
+<datalist id="Tujuan">
+<option value="Airport">
+<option value="Pelabuhan">
+<option value="Rumah/Kantor">
+</datalist>
+</p>
+
+<p>
+<label>Pesan Khusus
+<textarea name="comments" maxlength="1500"></textarea>
+</label>
+</p>
+
+<p><button>Submit Booking</button></p>
+
+</form>

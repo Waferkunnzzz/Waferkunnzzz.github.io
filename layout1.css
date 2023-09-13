@@ -1,0 +1,111 @@
+aa* {margin:0; padding:0;}
+        
+       head {
+            box-sizing: border-box;
+            }
+  /* ini Style headernya */
+        header {
+            background-image: url("FIND YOUR BEST SCALY PARTNER.png");
+            background-repeat:no-repeat;
+            background-position: center;
+            background-size: 80%;
+            padding: 70px;
+               }
+        body {
+			background-color:#FFFFF; 
+            font-family: Arial, Helvetica, sans-serif;
+			
+        }
+ nav {
+	background-color: 	#355E3B; 
+	height:40px; 
+	line-height:40px; 
+	position:relative;
+	width:790px;
+	margin:auto;
+	margin-top:3px;
+}
+
+nav ul {
+	list-style:none;
+}
+nav ul li a {
+	float:left; 
+	width:97px; 
+	display:block; 
+	text-align:center; 
+	color:	#FFff; 
+	text-decoration:none; 
+	text-transform:uppercase;
+}
+
+nav ul li a:hover {
+	background-color:#FFFFF; 
+	display:block;
+}
+
+nav ul li:hover ul {
+	display:block;
+}
+nav ul ul {
+	display:none; 
+	list-style:none; 
+	position:absolute; 
+	background-color:#355E3B;
+	left:178px; 
+	top:38px; 
+	width:137px;
+}
+
+nav ul ul li a {
+	float:none; 
+	display:block; 
+	padding-left:30px; 
+	text-align:left; 
+	width:160px;
+}
+
+nav ul ul li a:hover {
+	color:#990;
+}
+       
+        
+        nav a
+        {
+            color: white;
+        }
+ 
+        article {
+            float: left;
+            padding: 70px;
+            width:50%;
+            background-color: #0000;
+            height: 100px;
+            /* hanya untuk contoh saja */
+        }
+ 
+        /* Clear floats after the columns */
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+ 
+        /* Style the footer */
+        footer {
+            background-color: green;
+            padding: 5px;
+            text-align: center;
+            color: white;
+        }
+ 
+        /* Responsive layout - buat 2 kolom/kotak */
+        @media (max-width: 600px) {
+ 
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+   
